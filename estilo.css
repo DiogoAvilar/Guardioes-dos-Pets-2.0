@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body, html{
+	padding: 0;
+	margin:0;
+	background-color:#000;
+}
+header{
+	width: 100%;
+	background-color: #000;
+	position: fixed;
+}
+.esta{
+	width: 100px;
+	height: 300px;
+	margin-left:90%;
+	margin-bottom:20%;
+}
+.gatos{
+	width: 200px;
+	height:200px;
+	float: left;
+	margin-left:12%;
+
+}
+legend{
+	color: white;
+	margin-left:43%;
+	margin-bottom:5%;
+}
+.esta:hover{
+	cursor: pointer;
+}
+
+.back{
+	width: 100%;
+	height:800px;
+	background: url(../img/BANNER.jpg) center center ;
+	background-size:cover;
+/*ocultando botao checkbox*/
+}
+.back2{
+	background: url(../img/Untitled-1.jpg) center center;
+	width: 100%;
+	height:500px;
+	background-size: cover;
+}
+#btn-menu{
+	display: none;
+}
+img{ width: 30px; height: 30px; padding: 5px;}
+/*ocultando o icone menu*/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 20px;
+}
+.logo{
+	height:50px;
+	width: 50px;
+	float: left;
+	margin-left:1%;
+}
+/*.rede{
+	margin-left:-55px;
+	margin-bottom:-50px;
+
+}
+.rede:hover{
+	cursor: pointer;
+}
+
+footer{
+	color: white;
+	margin-left:50%;
+	 font-family: 'Oswald', sans-serif;
+	margin-bottom:200px
+}*/
+
+/*quando passar o mouse*/
+header label:hover{
+	cursor: pointer;
+}
+/*formatando lista*/
+.menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: flex;
+	right: 50px;
+}
+/*quando passar o mouse*/
+.menu li:hover{
+	background-color: #ccc;
+}
+/*formatando links */
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #fff;
+	margin-left:95px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 768px) {
+	.back{
+
+		height: 500px;
+
+			}
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		width: 30%;
+		margin-left: -70%;
+		background-color: #000;
+		transition: all 0.5s;
+	}
+	.logo{
+		display: none;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+	#btn-menu:checked~.menu{
+		margin: 0;
+	}
+
+}
+	
